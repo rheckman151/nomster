@@ -1,4 +1,5 @@
 @import "bootstrap";
+@import url(https://fonts.googleapis.com/css?family=Crimson+Text);
 
 .booyah-box{
   -webkit-box-shadow: 1px 1px 2px 0 #d0d0d0;
@@ -18,11 +19,16 @@ h1, h2, h3, h4, h5, h6{
 }
 
 body{
-  background: image_url('fancy-cushion.png');
-  font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
+  background: url('fancy-cushion.png');
+  font-family: Corbel, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", "Bitstream Vera Sans", "Liberation Sans", Verdana, "Verdana Ref", sans-serif;
 }
-
+// Lesson 11
 .navbar{
-  background: image_url('qbkls.png');
   box-shadow: 0px 1px 3px #2a2a2a;
+}
+// Lesson 11
+.navbar-inverse .navbar-brand {
+  color: #E3E85A;
+  font-family: 'Crimson Text', serif;
+  font-size: 26px;
 }
