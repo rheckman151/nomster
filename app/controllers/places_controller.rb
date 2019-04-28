@@ -1,5 +1,9 @@
 class PlacesController < ApplicationController
   before_action :authenticate_user!, only: [:new, :create, :edit, :update, :destroy]
+  # validates :name, :address, :description, presence: true
+  # validates :name, length: { minimum: 4 }
+  # validates :description, length: { minimum: 6..100 }
+  # validates :address, length: { in: 7..35 }
   def index
       @places = Place.all
       # .paginate(page: params[:page], per_page: 2)
