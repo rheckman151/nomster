@@ -1,12 +1,10 @@
 class PlacesController < ApplicationController
   before_action :authenticate_user!, only: [:new, :create, :edit, :update, :destroy]
-  # validates :name, :address, :description, presence: true
-  # validates :name, length: { minimum: 4 }
-  # validates :description, length: { minimum: 6..100 }
-  # validates :address, length: { in: 7..35 }
   def index
-      @places = Place.all
-      # .paginate(page: params[:page], per_page: 2)
+      # @places = Place.all.page(params[:page]).per_page(2)
+
+    # or, use an explicit "per page" limit:
+    @places = Place.paginate(:page => params[:page], :per_page => 2)
   end
 
   def new
@@ -14,6 +12,7 @@ class PlacesController < ApplicationController
   end
 
   def create
+    
       @place = current_user.places.create(place_params)
       if @place.valid?
         redirect_to root_path
