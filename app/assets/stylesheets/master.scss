@@ -20,7 +20,7 @@ h1, h2, h3, h4, h5, h6{
 }
 
 body{
-  background: image_url('fancy-cushion.png');
+  background: image_url('beanstalk.png');
   font-family: Corbel, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", "Bitstream Vera Sans", "Liberation Sans", Verdana, "Verdana Ref", sans-serif;
 }
 // Lesson 11
@@ -31,7 +31,7 @@ body{
 // Lesson 11
 .navbar-inverse .navbar-brand {
   color: #E3E85A;
-  font-family: 'Crimson Text', serif;
+  font-family: 'chunkfiveroman', sans-serif;
   font-size: 26px;
 }
 
@@ -52,11 +52,11 @@ html, body{
   height: 300px;
 }
 
-.carousel-inner > .carousel-item, .carousel-inner > .carousel-item > a > img {
+.carousel-inner > .carousel-item > img, .carousel-inner > .carousel-item > a > img {
   max-height: 550px;
   width: 100%;
-  
 }
+
 .carousel-item.active,
 .carousel-item-next,
 .carousel-item-prev{
@@ -74,7 +74,7 @@ html, body{
   left: 0;
 }
 
-.carousel{
+.carousel {
   box-shadow: 0px 3px 8px #2a2a2a;
 }
 
